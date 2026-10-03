@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOKUTEI JFT VIỆC LÀM - Học tập • Luyện thi • Việc làm tại Nhật</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#0f172a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- ==================== 1. HEADER ==================== -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center text-white font-black text-xl shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+            T
+          </div>
+          <div class="flex flex-col">
+            <span class="font-black text-lg leading-none tracking-tight text-slate-900">TOKUTEI JFT</span>
+            <span class="text-xs font-bold tracking-widest text-brand-600 uppercase mt-0.5">VIỆC LÀM</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="hidden lg:flex items-center gap-8 text-[15px] font-semibold text-slate-600">
+          <a href="#" class="text-brand-600 font-bold hover:text-brand-700 transition-colors">Trang chủ</a>
+          <a href="#jft-section" class="hover:text-brand-600 transition-colors">Luyện đề JFT</a>
+          <a href="#tokutei-section" class="hover:text-brand-600 transition-colors">Tokutei 1 & 2</a>
+          <a href="#khoahoc-section" class="hover:text-brand-600 transition-colors">Khóa học</a>
+          <a href="#vieclam-section" class="hover:text-brand-600 transition-colors">Việc làm</a>
+          <a href="#tai-lieu" class="hover:text-brand-600 transition-colors">Tài liệu</a>
+        </nav>
+
+        <!-- Right Header Actions -->
+        <div class="hidden sm:flex items-center gap-4">
+          <!-- Language Selector -->
+          <div class="flex items-center gap-2 text-sm font-medium text-slate-600 bg-slate-100/80 px-3 py-2 rounded-xl border border-slate-200/60 cursor-pointer hover:bg-slate-200/60 transition-colors">
+            <i class="fa-solid fa-globe text-brand-600"></i>
+            <span>Tiếng Việt</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400"></i>
+          </div>
+
+          <!-- Login Button -->
+          <a href="#" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-md shadow-brand-600/20 transition-all hover:shadow-lg hover:-translate-y-0.5">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <span>Đăng nhập</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== 2. HERO SECTION ==================== -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-blue-50/50 via-slate-50 to-white pt-10 pb-16 lg:pt-16 lg:pb-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Cột Trái -->
+        <div class="lg:col-span-6 flex flex-col items-start">
+          <div class="inline-flex items-center gap-2 bg-blue-100/80 border border-blue-200/60 text-brand-700 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+            <span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
+            <span>Nền tảng thi chuẩn CBT & Kết nối tuyển dụng #1 Nhật Bản</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight uppercase leading-[1.1] mb-2">
+            TOKUTEI JFT
+          </h1>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-brand-600 tracking-tight uppercase leading-[1.1] mb-4">
+            VIỆC LÀM
+          </h1>
+
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-800 mb-4">
+            Học tập • Luyện thi • Việc làm tại Nhật
+          </h2>
+
+          <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-xl mb-8">
+            Nền tảng học tiếng Nhật, luyện thi JFT và Tokutei (Gino 1 & 2), cung cấp khóa học chất lượng và kết nối việc làm trực tiếp từ các doanh nghiệp Nhật Bản.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
+            <a href="#khoahoc-section" class="inline-flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-brand-600/30 transition-all hover:-translate-y-0.5">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Xem khóa học</span>
+            </a>
+
+            <a href="#vieclam-section" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-800 font-bold px-7 py-3.5 rounded-xl border border-slate-200 shadow-sm transition-all hover:-translate-y-0.5">
+              <i class="fa-solid fa-briefcase text-brand-600"></i>
+              <span>Tìm việc làm</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cột Phải -->
+        <div class="lg:col-span-6 relative flex justify-center lg:justify-end">
+          <div class="relative w-full max-w-lg lg:max-w-none">
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-200 aspect-[4/3]">
+              <img 
+                src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1200&auto=format&fit=crop" 
+                alt="Nhật Bản - Tokutei JFT Việc Làm" 
+                class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/30 via-transparent to-transparent"></div>
+            </div>
+
+            <!-- Floating Card -->
+            <div class="absolute -top-4 -right-2 sm:-top-5 sm:-right-4 bg-white/95 backdrop-blur-md px-4 py-3 sm:px-5 sm:py-3.5 rounded-2xl shadow-xl border border-slate-100/80 flex items-center gap-3 sm:gap-4 z-10 animate-bounce-slow">
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0">
+                <i class="fa-solid fa-circle-check text-lg sm:text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-xs sm:text-sm">Tư vấn Visa Tokutei</h4>
+                <p class="text-[11px] sm:text-xs text-slate-500 font-medium">Cơ hội mới cho tương lai của bạn</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 3. HỆ THỐNG DỊCH VỤ TRỌNG TÂM ==================== -->
+  <section id="dich-vu" class="py-12 bg-white border-y border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 uppercase tracking-tight mb-2">
+          HỆ THỐNG DỊCH VỤ TRỌNG TÂM
+        </h2>
+        <p class="text-slate-500 text-sm">
+          Lựa chọn danh mục bạn muốn trải nghiệm để chuẩn bị tốt nhất cho hành trình làm việc tại Nhật Bản
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- CARD 1 -->
+        <div class="bg-slate-50/70 rounded-2xl p-6 border border-slate-200/60 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-600 flex items-center justify-center text-xl mb-4 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-floppy-disk"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 uppercase mb-2">LUYỆN THI JFT</h3>
+            <p class="text-slate-500 text-xs sm:text-sm leading-relaxed mb-6">
+              Học từ vựng, ngữ pháp, nghe, đọc và ôn luyện đề thi JFT-Basic A2 sát đề thật CBT.
+            </p>
+          </div>
+          <a href="#jft-section" class="w-full bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold uppercase py-3 rounded-xl text-center transition-colors shadow-sm block">
+            XEM JFT
+          </a>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="bg-slate-50/70 rounded-2xl p-6 border border-slate-200/60 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-600 flex items-center justify-center text-xl mb-4 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-user-gear"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 uppercase mb-2">TOKUTEI GINO 1 & 2</h3>
+            <p class="text-slate-500 text-xs sm:text-sm leading-relaxed mb-6">
+              Khám phá và ôn thi Tokutei đầy đủ các ngành nghề trọng điểm Nhật Bản.
+            </p>
+          </div>
+          <a href="#tokutei-section" class="w-full bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold uppercase py-3 rounded-xl text-center transition-colors shadow-sm block">
+            XEM NGÀNH
+          </a>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="bg-slate-50/70 rounded-2xl p-6 border border-slate-200/60 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-600 flex items-center justify-center text-xl mb-4 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 uppercase mb-2">KHÓA HỌC</h3>
+            <p class="text-slate-500 text-xs sm:text-sm leading-relaxed mb-6">
+              Các khóa học cấp tốc JFT và Tokutei với bài học Miễn phí & Nâng cao.
+            </p>
+          </div>
+          <a href="#khoahoc-section" class="w-full bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold uppercase py-3 rounded-xl text-center transition-colors shadow-sm block">
+            XEM KHÓA HỌC
+          </a>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="bg-slate-50/70 rounded-2xl p-6 border border-slate-200/60 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-600 flex items-center justify-center text-xl mb-4 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 uppercase mb-2">VIỆC LÀM TOKUTEI</h3>
+            <p class="text-slate-500 text-xs sm:text-sm leading-relaxed mb-6">
+              Tìm việc Tokutei theo từng ngành nghề và tỉnh thành Nhật Bản trực tiếp.
+            </p>
+          </div>
+          <a href="#vieclam-section" class="w-full bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold uppercase py-3 rounded-xl text-center transition-colors shadow-sm block">
+            TÌM VIỆC
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== A. CHI TIẾT 1: JFT - LUYỆN ĐỀ ==================== -->
+  <section id="jft-section" class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <span class="text-xs font-extrabold uppercase text-brand-600 tracking-wider">Hệ thống Luyện thi CBT</span>
+          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 uppercase mt-1">JFT - BASIC A2 LUYỆN ĐỀ THỰC CHIẾN</h2>
+        </div>
+        <p class="text-slate-500 text-sm max-w-md">Thi thử chuẩn cấu trúc đề thật CBT. Nộp bài sẽ có kết quả, điểm số, và lời giải chi tiết ngay lập tức!</p>
+      </div>
+
+      <!-- Khung Demo Bài Thi JFT -->
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-lg">
+        <div class="flex items-center justify-between pb-6 border-b border-slate-100 mb-6">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 bg-brand-100 text-brand-700 font-bold text-xs rounded-lg uppercase">Đề thi số 01</span>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900">JFT-Basic A2 Mô Phỏng CBT Quốc Tế</h3>
+          </div>
+          <div class="flex items-center gap-2 text-slate-600 font-mono text-sm bg-slate-100 px-3 py-1.5 rounded-lg">
+            <i class="fa-regular fa-clock text-brand-600"></i>
+            <span id="jft-timer">60:00</span>
+          </div>
+        </div>
+
+        <!-- Mẫu 2 Câu Hỏi Thi JFT -->
+        <div class="space-y-8">
+          <!-- Câu 1 -->
+          <div class="bg-slate-50/80 p-5 rounded-2xl border border-slate-200/80">
+            <div class="flex items-start gap-3 mb-3">
+              <span class="w-7 h-7 rounded-lg bg-brand-600 text-white font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">Câu 1</span>
+              <p class="font-medium text-slate-800 text-sm sm:text-base">Chọn từ đúng điền vào chỗ trống trong câu sau:<br><span class="font-bold text-slate-900">「わたしは 毎日 7時に ______。」</span></p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pl-10">
+              <label class="flex items-center gap-3 p-3 bg-white border border-slate-200 rounded-xl cursor-pointer hover:border-brand-500 transition-colors">
+                <input type="radio" name="q1" value="A" class="w-4 h-4 text-brand-600">
+                <span class="text-sm font-medium">A. おきます (Thức dậy)</span>
+              </label>
+              <label class="flex items-center gap-3 p-3 bg-white border border-slate-200 rounded-xl cursor-pointer hover:border-brand-500 transition-colors">
+                <input type="radio" name="q1" value="B" class="w-4 h-4 text-brand-600">
+                <span class="text-sm font-medium">B. たべます (Ăn)</span>
+              </label>
+              <label class="flex items-center gap-3 p-3 bg-white border border-slate-200 rounded-xl cursor-pointer hover:border-brand-500 transition-colors">
+                <input type="radio" name="q1" value="C" class="w-4 h-4 text-brand-600">
+                <span class="text-sm font-medium">C. のみます (Uống)</span>
+              </label>
+              <label class="flex items-center gap-3 p-3 bg-white border border-slate-200 rounded-xl cursor-pointer hover:border-brand-500 transition-colors">
+                <input type="radio" name="q1" value="D" class="w-4 h-4 text-brand-600">
+                <span class="text-sm font-medium">D. ねます (Đi ngủ)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Câu 2 -->
+          <div class="bg-slate-50/80 p-5 rounded-2xl border border-slate-200/80">
+            <div class="flex items-start gap-3 mb-3">
+              <span class="w-7 h-7 rounded-lg bg-brand-600 text-white font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">Câu 2</span>
+              <p class="font-medium text-slate-800 text-sm sm:text-base">Nghe đoạn hội thoại ngắn và chọn câu trả lời thích hợp cho vị trí siêu thị:<br><span class="font-bold text-slate-900">「スーパーは どこに ありますか。」</span></p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pl-10">
+              <label class="flex items-center gap-3 p-3 bg-white border border-slate-200 rounded-xl cursor-pointer hover:border-brand-500 transition-colors">
+                <input type="radio" name="q2" value="A" class="w-4 h-4 text-brand-600">
+                <span class="text-sm font-medium">A. 駅の となりです (Bên cạnh ga)</span>
+              </label>
+              <label class="flex items-center gap-3 p-3 bg-white border border-slate-200 rounded-xl cursor-pointer hover:border-brand-500 transition-colors">
+                <input type="radio" name="q2" value="B" class="w-4 h-4 text-brand-600">
+                <span class="text-sm font-medium">B. 学校の なかです (Trong trường học)</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Button -->
+        <div class="mt-8 pt-6 border-t border-slate-100 flex justify-end">
+          <button onclick="submitExam('JFT-Basic A2 Số 01')" class="bg-brand-600 hover:bg-brand-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg shadow-brand-600/30 transition-all flex items-center gap-2">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>NỘP BÀI THI JFT</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== B. CHI TIẾT 2: TOKUTEI GINO 1 & 2 (PHÂN THEO NGÀNH) ==================== -->
+  <section id="tokutei-section" class="py-16 bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-extrabold uppercase text-brand-600 tracking-wider">Đầy đủ 13 Ngành Trọng Điểm</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 uppercase mt-1">TOKUTEI GINO 1 & 2 THI TỪNG NGÀNH</h2>
+        <p class="text-slate-500 text-sm mt-2">Mỗi ngành nghề bao gồm trọn bộ: Kiến thức ngành • Từ vựng • Luyện đề • Chấm điểm tức thì</p>
+      </div>
+
+      <!-- Grid Các Ngành Tokutei -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Ngành 1: Chế biến thực phẩm -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center text-2xl font-bold">🍱</div>
+            <div>
+              <h3 class="font-extrabold text-slate-900 text-lg uppercase">Chế biến thực phẩm</h3>
+              <span class="text-xs text-slate-500 font-medium">Tokutei Gino 1 & 2</span>
+            </div>
+          </div>
+          <!-- 4 Mục bắt buộc -->
+          <div class="space-y-2 mb-6">
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-book text-brand-600"></i> Kiến thức ngành (HACCP, Vệ sinh)</span>
+              <span class="text-green-600 font-bold">12 bài</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-spell-check text-brand-600"></i> Từ vựng chuyên ngành</span>
+              <span class="text-green-600 font-bold">350 từ</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-file-pen text-brand-600"></i> Luyện đề thi mô phỏng</span>
+              <span class="text-green-600 font-bold">8 đề CBT</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-chart-line text-brand-600"></i> Chấm điểm & Giải thích</span>
+              <span class="text-brand-600 font-bold">Tự động</span>
+            </div>
+          </div>
+          <button onclick="submitExam('Tokutei Chế Biến Thực Phẩm')" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs uppercase py-3 rounded-xl transition-colors">
+            LÀM BÀI THI CHẾ BIẾN THỰC PHẨM
+          </button>
+        </div>
+
+        <!-- Ngành 2: Nhà hàng -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-red-100 text-red-600 flex items-center justify-center text-2xl font-bold">🍜</div>
+            <div>
+              <h3 class="font-extrabold text-slate-900 text-lg uppercase">Dịch vụ ăn uống / Nhà hàng</h3>
+              <span class="text-xs text-slate-500 font-medium">Tokutei Gino 1 & 2</span>
+            </div>
+          </div>
+          <div class="space-y-2 mb-6">
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-book text-brand-600"></i> Kiến thức ngành (Phục vụ, Nấu ăn)</span>
+              <span class="text-green-600 font-bold">10 bài</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-spell-check text-brand-600"></i> Từ vựng chuyên ngành</span>
+              <span class="text-green-600 font-bold">280 từ</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-file-pen text-brand-600"></i> Luyện đề thi mô phỏng</span>
+              <span class="text-green-600 font-bold">6 đề CBT</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-chart-line text-brand-600"></i> Chấm điểm & Giải thích</span>
+              <span class="text-brand-600 font-bold">Tự động</span>
+            </div>
+          </div>
+          <button onclick="submitExam('Tokutei Nhà Hàng')" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs uppercase py-3 rounded-xl transition-colors">
+            LÀM BÀI THI NHÀ HÀNG
+          </button>
+        </div>
+
+        <!-- Ngành 3: Điều dưỡng -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-pink-100 text-pink-600 flex items-center justify-center text-2xl font-bold">👩‍⚕️</div>
+            <div>
+              <h3 class="font-extrabold text-slate-900 text-lg uppercase">Điều dưỡng (Kaigo)</h3>
+              <span class="text-xs text-slate-500 font-medium">Tokutei Gino 1 & 2</span>
+            </div>
+          </div>
+          <div class="space-y-2 mb-6">
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-book text-brand-600"></i> Kiến thức chăm sóc người cao tuổi</span>
+              <span class="text-green-600 font-bold">15 bài</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-spell-check text-brand-600"></i> Từ vựng chuyên ngành Kaigo</span>
+              <span class="text-green-600 font-bold">450 từ</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-file-pen text-brand-600"></i> Luyện đề thi Tiếng Nhật + Kỹ năng</span>
+              <span class="text-green-600 font-bold">10 đề CBT</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-chart-line text-brand-600"></i> Chấm điểm & Giải thích</span>
+              <span class="text-brand-600 font-bold">Tự động</span>
+            </div>
+          </div>
+          <button onclick="submitExam('Tokutei Điều Dưỡng')" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs uppercase py-3 rounded-xl transition-colors">
+            LÀM BÀI THI ĐIỀU DƯỠNG
+          </button>
+        </div>
+
+        <!-- Ngành 4: Nông nghiệp -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl font-bold">🌾</div>
+            <div>
+              <h3 class="font-extrabold text-slate-900 text-lg uppercase">Nông nghiệp</h3>
+              <span class="text-xs text-slate-500 font-medium">Trồng trọt & Chăn nuôi</span>
+            </div>
+          </div>
+          <div class="space-y-2 mb-6">
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-book text-brand-600"></i> Kiến thức nông nghiệp</span>
+              <span class="text-green-600 font-bold">8 bài</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-spell-check text-brand-600"></i> Từ vựng chuyên ngành</span>
+              <span class="text-green-600 font-bold">200 từ</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-file-pen text-brand-600"></i> Luyện đề thi mô phỏng</span>
+              <span class="text-green-600 font-bold">5 đề CBT</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-chart-line text-brand-600"></i> Chấm điểm & Giải thích</span>
+              <span class="text-brand-600 font-bold">Tự động</span>
+            </div>
+          </div>
+          <button onclick="submitExam('Tokutei Nông Nghiệp')" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs uppercase py-3 rounded-xl transition-colors">
+            LÀM BÀI THI NÔNG NGHIỆP
+          </button>
+        </div>
+
+        <!-- Ngành 5: Xây dựng -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-2xl font-bold">🏗️</div>
+            <div>
+              <h3 class="font-extrabold text-slate-900 text-lg uppercase">Xây dựng</h3>
+              <span class="text-xs text-slate-500 font-medium">Tokutei Gino 1 & 2</span>
+            </div>
+          </div>
+          <div class="space-y-2 mb-6">
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-book text-brand-600"></i> Kiến thức an toàn & thi công</span>
+              <span class="text-green-600 font-bold">11 bài</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-spell-check text-brand-600"></i> Từ vựng công trình</span>
+              <span class="text-green-600 font-bold">300 từ</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-file-pen text-brand-600"></i> Luyện đề thi mô phỏng</span>
+              <span class="text-green-600 font-bold">6 đề CBT</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-chart-line text-brand-600"></i> Chấm điểm & Giải thích</span>
+              <span class="text-brand-600 font-bold">Tự động</span>
+            </div>
+          </div>
+          <button onclick="submitExam('Tokutei Xây Dựng')" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs uppercase py-3 rounded-xl transition-colors">
+            LÀM BÀI THI XÂY DỰNG
+          </button>
+        </div>
+
+        <!-- Ngành 6: Khách sạn -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-2xl font-bold">🏨</div>
+            <div>
+              <h3 class="font-extrabold text-slate-900 text-lg uppercase">Khách sạn / Nghiệp vụ lễ tân</h3>
+              <span class="text-xs text-slate-500 font-medium">Tokutei Gino 1 & 2</span>
+            </div>
+          </div>
+          <div class="space-y-2 mb-6">
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-book text-brand-600"></i> Kiến thức mảng khách sạn</span>
+              <span class="text-green-600 font-bold">9 bài</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-spell-check text-brand-600"></i> Từ vựng nghiệp vụ lễ tân</span>
+              <span class="text-green-600 font-bold">250 từ</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-file-pen text-brand-600"></i> Luyện đề thi mô phỏng</span>
+              <span class="text-green-600 font-bold">5 đề CBT</span>
+            </div>
+            <div class="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200/70 text-xs font-medium text-slate-700">
+              <span class="flex items-center gap-2"><i class="fa-solid fa-chart-line text-brand-600"></i> Chấm điểm & Giải thích</span>
+              <span class="text-brand-600 font-bold">Tự động</span>
+            </div>
+          </div>
+          <button onclick="submitExam('Tokutei Khách Sạn')" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs uppercase py-3 rounded-xl transition-colors">
+            LÀM BÀI THI KHÁCH SẠN
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== C. CHI TIẾT 3: KHÓA HỌC ==================== -->
+  <section id="khoahoc-section" class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-extrabold uppercase text-brand-600 tracking-wider">Chương Trình Đào Tạo Chuẩn</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 uppercase mt-1">KHÓA HỌC CHUYÊN SÂU JFT & TOKUTEI</h2>
+        <p class="text-slate-500 text-sm mt-2">Học bài bản từ lộ trình căn bản đến nâng cao cùng giảng viên nhiều năm kinh nghiệm tại Nhật</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Khóa 1 -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
+          <div>
+            <div class="bg-gradient-to-r from-brand-600 to-blue-700 p-6 text-white">
+              <span class="text-xs uppercase font-bold tracking-widest bg-white/20 px-3 py-1 rounded-full">Khóa Cấp Tốc</span>
+              <h3 class="text-xl font-black mt-3">JFT-Basic A2 Đạt Chuẩn Sau 60 Ngày</h3>
+              <p class="text-blue-100 text-xs mt-2">Dành cho người mới bắt đầu hoặc chưa từng thi JFT</p>
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center gap-3 text-sm text-slate-700 font-medium">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <span>40 Bài giảng video chất lượng cao</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-slate-700 font-medium">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <span>Kho 1000+ từ vựng & ngữ pháp trọng tâm</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-slate-700 font-medium">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <span>Luyện thi CBT không giới hạn số lần</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-slate-100 mt-4">
+            <div class="flex items-center justify-between my-4">
+              <span class="text-xs text-slate-400 line-through">1.500.000đ</span>
+              <span class="text-2xl font-black text-brand-600">Miễn Phí</span>
+            </div>
+            <button onclick="alert('Đã đăng ký Khóa học JFT Cấp Tốc thành công!')" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3.5 rounded-xl transition-colors">
+              ĐĂNG KÝ HỌC NGAY
+            </button>
+          </div>
+        </div>
+
+        <!-- Khóa 2 -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
+          <div>
+            <div class="bg-gradient-to-r from-slate-800 to-slate-900 p-6 text-white">
+              <span class="text-xs uppercase font-bold tracking-widest bg-amber-400 text-slate-900 px-3 py-1 rounded-full">Khóa Chuyên Ngành</span>
+              <h3 class="text-xl font-black mt-3">Luyện Thi Tokutei Chế Biến Thực Phẩm</h3>
+              <p class="text-slate-300 text-xs mt-2">Bao trọn lý thuyết HACCP, từ vựng & đề thi</p>
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center gap-3 text-sm text-slate-700 font-medium">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <span>Tài liệu Tiếng Việt dịch chuẩn 100%</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-slate-700 font-medium">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <span>8 Đề thi thử CBT chấm điểm tức thì</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-slate-700 font-medium">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <span>Hỗ trợ phỏng vấn đơn hàng miễn phí</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-slate-100 mt-4">
+            <div class="flex items-center justify-between my-4">
+              <span class="text-xs text-slate-400 line-through">2.000.000đ</span>
+              <span class="text-2xl font-black text-brand-600">Miễn Phí</span>
+            </div>
+            <button onclick="alert('Đã đăng ký Khóa Tokutei Thực Phẩm thành công!')" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3.5 rounded-xl transition-colors">
+              ĐĂNG KÝ HỌC NGAY
+            </button>
+          </div>
+        </div>
+
+        <!-- Khóa 3 -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
+          <div>
+            <div class="bg-gradient-to-r from-brand-600 to-blue-700 p-6 text-white">
+              <span class="text-xs uppercase font-bold tracking-widest bg-white/20 px-3 py-1 rounded-full">Khóa Chuyên Ngành</span>
+              <h3 class="text-xl font-black mt-3">Luyện Thi Tokutei Nhà Hàng / Dịch Vụ</h3>
+              <p class="text-blue-100 text-xs mt-2">Kiến thức nấu ăn, phục vụ & tiếp khách Nhật</p>
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center gap-3 text-sm text-slate-700 font-medium">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <span>Trọn bộ từ vựng phục vụ & nấu ăn</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-slate-700 font-medium">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <span>6 Đề thi CBT mô phỏng kỳ thi thật</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-slate-700 font-medium">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <span>Tư vấn chuyển đổi Visa trực tiếp</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-slate-100 mt-4">
+            <div class="flex items-center justify-between my-4">
+              <span class="text-xs text-slate-400 line-through">2.000.000đ</span>
+              <span class="text-2xl font-black text-brand-600">Miễn Phí</span>
+            </div>
+            <button onclick="alert('Đã đăng ký Khóa Tokutei Nhà Hàng thành công!')" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3.5 rounded-xl transition-colors">
+              ĐĂNG KÝ HỌC NGAY
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== D. CHI TIẾT 4: VIỆC LÀM TOKUTEI ==================== -->
+  <section id="vieclam-section" class="py-16 bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <span class="text-xs font-extrabold uppercase text-brand-600 tracking-wider">Tuyển Dụng Trực Tiếp</span>
+          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 uppercase mt-1">DON HÀNG VIỆC LÀM TOKUTEI MỚI NHẤT</h2>
+        </div>
+        <a href="#" class="text-sm font-bold text-brand-600 hover:text-brand-700 flex items-center gap-2">
+          <span>Xem tất cả đơn hàng</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Danh Sách Đơn Hàng Mẫu -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Đơn 1 -->
+        <div class="bg-slate-50/80 rounded-2xl p-6 border border-slate-200/80 hover:border-brand-500 transition-all hover:shadow-lg flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-md">Tokyo, Nhật Bản</span>
+              <span class="text-xs font-semibold text-slate-400">Đăng 2 giờ trước</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Tuyển 10 Nam/Nữ Chế Biến Cơm Hộp Tokyo</h3>
+            <p class="text-xs text-slate-500 mb-4 line-clamp-2">Làm việc tại xưởng sản xuất thực phẩm lớn tại Tokyo. Môi trường sạch sẽ, có ký túc xá đầy đủ tiện nghi.</p>
+            <div class="space-y-2 pt-3 border-t border-slate-200/60 text-xs font-medium text-slate-700">
+              <div class="flex justify-between">
+                <span class="text-slate-500">Mức lương:</span>
+                <span class="font-bold text-brand-600">220.000 Yên/tháng (~37 triệu)</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-500">Yêu cầu:</span>
+                <span class="font-bold text-slate-900">Đỗ Tokutei Thực phẩm / N4</span>
+              </div>
+            </div>
+          </div>
+          <button onclick="alert('Đã gửi yêu cầu ứng tuyển đơn hàng Tokyo!')" class="w-full mt-6 bg-slate-900 hover:bg-brand-600 text-white font-bold text-xs uppercase py-3 rounded-xl transition-colors">
+            ỨNG TUYỂN NGAY
+          </button>
+        </div>
+
+        <!-- Đơn 2 -->
+        <div class="bg-slate-50/80 rounded-2xl p-6 border border-slate-200/80 hover:border-brand-500 transition-all hover:shadow-lg flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 bg-blue-100 text-brand-700 text-xs font-bold rounded-md">Osaka, Nhật Bản</span>
+              <span class="text-xs font-semibold text-slate-400">Đăng 1 ngày trước</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Tuyển 5 Phục Vụ Chuỗi Nhà Hàng Yakiniku Osaka</h3>
+            <p class="text-xs text-slate-500 mb-4 line-clamp-2">Công việc đứng bếp phụ và phục vụ bàn tại hệ thống nhà hàng nổi tiếng. Lương thưởng hấp dẫn.</p>
+            <div class="space-y-2 pt-3 border-t border-slate-200/60 text-xs font-medium text-slate-700">
+              <div class="flex justify-between">
+                <span class="text-slate-500">Mức lương:</span>
+                <span class="font-bold text-brand-600">235.000 Yên/tháng (~40 triệu)</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-500">Yêu cầu:</span>
+                <span class="font-bold text-slate-900">Tokutei Nhà hàng + N3</span>
+              </div>
+            </div>
+          </div>
+          <button onclick="alert('Đã gửi yêu cầu ứng tuyển đơn hàng Osaka!')" class="w-full mt-6 bg-slate-900 hover:bg-brand-600 text-white font-bold text-xs uppercase py-3 rounded-xl transition-colors">
+            ỨNG TUYỂN NGAY
+          </button>
+        </div>
+
+        <!-- Đơn 3 -->
+        <div class="bg-slate-50/80 rounded-2xl p-6 border border-slate-200/80 hover:border-brand-500 transition-all hover:shadow-lg flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 bg-pink-100 text-pink-700 text-xs font-bold rounded-md">Aichi, Nhật Bản</span>
+              <span class="text-xs font-semibold text-slate-400">Đăng 3 ngày trước</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Tuyển 8 Nữ Điều Dưỡng Viên Viện Viện Dưỡng Aichi</h3>
+            <p class="text-xs text-slate-500 mb-4 line-clamp-2">Chăm sóc người cao tuổi tại viện dưỡng lão hiện đại. Hỗ trợ tiền nhà và nhiều phụ cấp theo ca.</p>
+            <div class="space-y-2 pt-3 border-t border-slate-200/60 text-xs font-medium text-slate-700">
+              <div class="flex justify-between">
+                <span class="text-slate-500">Mức lương:</span>
+                <span class="font-bold text-brand-600">240.000 Yên/tháng (~41 triệu)</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-500">Yêu cầu:</span>
+                <span class="font-bold text-slate-900">Tokutei Kaigo / JFT A2</span>
+              </div>
+            </div>
+          </div>
+          <button onclick="alert('Đã gửi yêu cầu ứng tuyển đơn hàng Aichi!')" class="w-full mt-6 bg-slate-900 hover:bg-brand-600 text-white font-bold text-xs uppercase py-3 rounded-xl transition-colors">
+            ỨNG TUYỂN NGAY
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-slate-900 text-white py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center text-white font-black text-xl">
+              T
+            </div>
+            <span class="font-black text-lg tracking-tight">TOKUTEI JFT VIỆC LÀM</span>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Hệ thống học tiếng Nhật, luyện thi CBT và hỗ trợ kết nối đơn hàng Tokutei uy tín hàng đầu.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-bold text-sm uppercase text-slate-200 mb-4">Chương Trình Học</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#jft-section" class="hover:text-white transition-colors">Luyện đề JFT-Basic A2</a></li>
+            <li><a href="#tokutei-section" class="hover:text-white transition-colors">Tokutei Thực Phẩm</a></li>
+            <li><a href="#tokutei-section" class="hover:text-white transition-colors">Tokutei Nhà Hàng</a></li>
+            <li><a href="#tokutei-section" class="hover:text-white transition-colors">Tokutei Điều Dưỡng</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-sm uppercase text-slate-200 mb-4">Hỗ Trợ</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#" class="hover:text-white transition-colors">Hướng dẫn làm bài CBT</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Tư vấn Visa Tokutei Gino</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Chính sách bảo mật</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Điều khoản sử dụng</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-sm uppercase text-slate-200 mb-4">Liên Hệ</h4>
+          <p class="text-xs text-slate-400 leading-relaxed mb-2"><i class="fa-solid fa-envelope mr-2 text-brand-500"></i> hotro@tokuteijft.vn</p>
+          <p class="text-xs text-slate-400 leading-relaxed"><i class="fa-solid fa-phone mr-2 text-brand-500"></i> Hotline: 0988.XXX.XXX</p>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+        © 2026 TOKUTEI JFT VIỆC LÀM. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hàm nộp bài thi
+    function submitExam(examName) {
+      alert("Chúc mừng bạn đã hoàn thành bài thi: " + examName + "!\nKết quả và giải thích chi tiết đang được cập nhật.");
+    }
+  </script>
+</body>
+</html>
